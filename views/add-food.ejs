@@ -1,0 +1,40 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/add-food.css">
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+
+    <main id="main">
+        <div class="container">
+            <section class="add-food">
+                <h2 class="add-food__title">Add Food</h2>
+                <form class="add-food__form" action="/add-food" method="POST">
+                    <div class="form-group">
+                        <label for="title">식당 이름</label>
+                        <input type="text" id="title" name="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="imageUrl">이미지 URL</label>
+                        <input type="text" id="imageUrl" name="imageUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">가격</label>
+                        <input type="number" id="price" name="price">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">설명</label>
+                        <textarea name="description" id="description" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="score"">평점</label>
+                        <input type="number" id="score" name="score">
+                    </div>
+
+                    <button type="submit" class="btn">추가하기</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+<%- include('includes/end.ejs') %>
