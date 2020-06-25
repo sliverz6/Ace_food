@@ -1,18 +1,21 @@
-.logo, .gnb, .gnb__lisitems li {
+.main-header__logo,
+.main-header__nav,
+.main-header__item {
     display: inline-block;
 }
 
-.gnb__lisitems li {
+.main-header__item {
     padding: 0 2rem;
 }
 
-.gnb__lisitems .current {
+.active {
     font-weight: bold;
     color: #E95567;
 }
 
 #main-header {
     background: #fff;
+    height: 5rem;
     padding: 1rem 6rem;
     display: flex;
     justify-content: space-between;

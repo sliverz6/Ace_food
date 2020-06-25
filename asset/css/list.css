@@ -4,24 +4,78 @@
     display: flex;
 }
 
-.choice-prefer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
+.foods {
+    padding: 5rem 0;
 }
 
-.choice-prefer input{
+.foods__title {
     display: inline-block;
-    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-family: 'Sriracha', cursive;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    border: 1px solid #230202;
 }
 
-.choice-price {
-    width: 30%;
-    padding: 0 5%;
+.foods__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.foodlist-fliter__btn {
-    width: 20%;
-    
+.foods__item {
+    margin-bottom: 2rem;
+}
+
+.card {
+    width: 23%;
+    height: 28rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card a {
+    color: #333;
+}
+
+.card__img {
+    width: 100%;
+    height: 60%;
+}
+
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__info {
+    padding: 1rem;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.card__score {
+    font-weight: bold;
+    color: #E95567;
+}
+
+.card__price {
+    margin-bottom: 0.5rem;
 }

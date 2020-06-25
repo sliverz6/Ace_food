@@ -1,63 +1,39 @@
-
 .container {
-    max-width: 70rem;
+    max-width: 80rem;
     margin: 0 auto;
+}
+
+.hero {
+    height: calc(100vh - 8.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero__title {
     text-align: center;
-    padding: 5rem 0;
     font-family: 'Sriracha', cursive;
     color: #230202;
     font-size: 4rem;
 }
 
-.foods {
-    padding-bottom: 5rem;
-}
-
-.foods__title {
-    display: inline-block;
-    font-size: 1.2rem;
-    font-family: 'Sriracha', cursive;
-    margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.2rem;
-    border: 1px solid #230202;
-}
-
-.food__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.foods__item {
-    width: 16rem;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    background: #fff;
-    border-radius: 0.2rem;
-    overflow: hidden;
-}
-
-.card__img {
-    width: inherit;
-}
-
-.card__info {
+.btn {
+    background: #E95567;
     padding: 1rem;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: 2px solid #E95567;
+    font-size: 1.1rem;
+    transition: background 0.3s, color 0.3s ease-in-out;
 }
 
-.card__title{
-    font-size: 1.3rem;
-    margin-bottom: 0.6rem;
-}
-
-.card__desc{
-    font-size: 0.9rem;
+.btn:hover,
+.btn:active {
+    background: #fff;
+    color: #E95567;
 }
 
 #main {
     background: #F2C65A;
-    padding: 2rem 0;
 }

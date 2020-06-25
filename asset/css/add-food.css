@@ -1,0 +1,48 @@
+.add-food {
+    height: calc(100vh - 8.5rem);
+    padding: 2rem 0;
+}
+
+.add-food__title {
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    color: #230202;
+    font-size: 4rem;
+}
+
+/* -----FORM----- */
+
+.add-food__form {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.form-group input,
+.form-group textarea { 
+    width: 100%;
+    border: none;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input {
+    padding: 0.5rem 0;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.3rem 0;
+}
+
+.add-food__form .btn {
+    width: 100%;
+}
