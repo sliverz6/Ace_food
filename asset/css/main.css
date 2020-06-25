@@ -4,10 +4,10 @@
 }
 
 .hero {
-    height: calc(100vh - 8.5rem);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 8.5rem);
 }
 
 .hero__title {
@@ -21,11 +21,11 @@
     background: #E95567;
     padding: 1rem;
     color: #fff;
+    border: 1px solid #E95567;
     border-radius: 0.2rem;
     cursor: pointer;
-    border: 2px solid #E95567;
     font-size: 1.1rem;
-    transition: background 0.3s, color 0.3s ease-in-out;
+    transition: background 0.3s, color 0.3s; 
 }
 
 .btn:hover,

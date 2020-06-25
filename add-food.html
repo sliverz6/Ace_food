@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="asset/css/header.css">
     <link rel="stylesheet" href="asset/css/footer.css">
     <link rel="stylesheet" href="asset/css/main.css">
-  
     <link rel="stylesheet" href="asset/css/add-food.css">
 </head>
 
@@ -22,7 +21,7 @@
             <ul class="main-header__list">
                 <li class="main-header__item"><a href="index.html">HOME</a></li>
                 <li class="main-header__item"><a href="list.html">LIST</a></li>
-                <li class="main-header__item"><a class="btn" href="add-food.html">ADD</a></li>
+                <li class="main-header__item"><a class="active" href="add-food.html">ADD FOOD</a></li>
             </ul>
         </nav>
     </header>
@@ -37,22 +36,23 @@
                         <input type="text" id="title" name="title">
                     </div>
                     <div class="form-group">
-                        <label for="imageUrl">이미지</label>
-                        <input type="url" id="imageUrl" name="imageUrl">
+                        <label for="imageUrl">이미지 URL</label>
+                        <input type="text" id="imageUrl" name="imageUrl">
                     </div>
                     <div class="form-group">
                         <label for="price">가격</label>
                         <input type="number" id="price" name="price">
                     </div>
                     <div class="form-group">
-                        <label for="title">설명</label>
+                        <label for="description">설명</label>
                         <textarea name="description" id="description" rows="4"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="socre"">평점</label>
-                        <input type="number" id="socre" name="socre">
+                        <label for="score"">평점</label>
+                        <input type="number" id="score" name="score">
                     </div>
-                    <button class="btn" type="submit">추가하기</button>
+
+                    <button type="submit" class="btn">추가하기</button>
                 </form>
             </section>
         </div>
