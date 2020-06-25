@@ -1,0 +1,27 @@
+.foodlist-fliter {
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+}
+
+.choice-prefer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.choice-prefer input{
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.choice-price {
+    width: 30%;
+    padding: 0 5%;
+}
+
+.foodlist-fliter__btn {
+    width: 20%;
+    
+}
