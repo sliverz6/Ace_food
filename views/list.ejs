@@ -1,0 +1,39 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+
+    <main id="main">
+        <div class="container">
+            <section class="foods">
+                <h2 class="foods__title">BEST RESTAURANT</h2>
+                <% if (foods.length > 0) { %>
+                    <ul class="foods__list">
+                        <% for (const food of foods) { %>
+                            <li class="foods__item card">
+                                <a href="#">
+                                    <div class="card__img">
+                                        <img src="<%= food.imageUrl %>" alt="<%= food.title %>">
+                                    </div>
+                                    <div class="card__info">
+                                        <header class="card__header">
+                                            <h3 class="card__title"><%= food.title %></h3>
+                                            <div class="card__score"><%= food.score %> / 5점</div>
+                                        </header>
+                                        <h4 class="card__price"><%= food.price %>원</h4>
+                                        <p class="card__desc"><%= food.description %></p>
+                                    </div>
+                                </a>
+                            </li>
+                        <% } %>
+                    </ul>
+                <% } else { %>
+                    <h3>There is no food list...</h3>
+                <% } %>
+            </section>
+        </div>
+    </main>
+
+<%- include('includes/end.ejs') %>
