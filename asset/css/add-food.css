@@ -1,0 +1,36 @@
+.add-food {
+    padding: 4rem 0;
+}
+
+.add-food__title {
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    color: #230202;
+    font-size: 4rem;
+}
+
+.add-food__form {
+    margin: 0 auto;
+    width: 30rem;
+}
+
+.add-food__form .btn {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
