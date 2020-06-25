@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const mainRoutes = require('./routes/main');
 
 const app = express();
+const PORT = process.env.PORT
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
@@ -19,4 +20,4 @@ app.use((req, res, next) => {
     res.send('<h1>Page Not Found!</h1>');
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(PORT);

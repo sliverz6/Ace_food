@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/sliverz6/Ace_food.git"
   },
+  "engines":{
+    "node": "v12.14.1",
+    "npm": "6.13.4"
+  },
   "keywords": [
     "ace",
     "food"
